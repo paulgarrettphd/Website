@@ -1,0 +1,50 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Dr Paul M. Garrett"
+  site-url: "https://paulgarrettphd.github.io/Website"
+  navbar:
+    left:
+      - text: "Home"
+        file: home.qmd
+      - text: "Research"
+        file: research.qmd
+      - text: "Publications"
+        file: publications.qmd
+      - text: "Resources"
+        menu:
+          - text: "Description"
+            file: resources.qmd
+          - text: "Accumulator Simulators"
+            file: apps.qmd
+          - text: "Licences"
+            file: licence.qmd
+    right:
+      - icon: github
+        href: https://github.com/paulgarrettphd
+      - icon: envelope
+        href: mailto:paul.garrett@unimelb.edu.au
+    page-footer:
+      left: |
+        Code: AGPL-3.0-or-later · Content: CC BY-SA 4.0
+
+format:
+  html:
+    theme: flatly
+    css: styles.css
+    toc: true
+    code-fold: true
+    code-tools: true
+    html-math-method: katex
+
+bibliography: references.bib
+csl: apa.csl
+
+preview:
+    watch-inputs: true   # auto rebuild on save
+    navigate: true       # client-side nav = fewer full rebuilds
+    port: 6633           # or any free port
+
+    

@@ -1,0 +1,10 @@
+---
+title: "Site Licenses"
+---
+
+## Code
+Licensed under **AGPL-3.0-or-later**. See the `LICENSE` file in the repo.
+
+## Content
+Text, figures, and pages are **CC BY-SA 4.0** unless noted.  
+Link: https://creativecommons.org/licenses/by-sa/4.0/

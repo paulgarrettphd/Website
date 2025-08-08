@@ -1,0 +1,86 @@
+[
+  {
+    "objectID": "resources.html",
+    "href": "resources.html",
+    "title": "Resources Overview",
+    "section": "",
+    "text": "Resources for students and researchers.\nThis page is under construction."
+  },
+  {
+    "objectID": "publications.html",
+    "href": "publications.html",
+    "title": "Publications",
+    "section": "",
+    "text": "Citation example my work on systems of estimation.1\nThis page is under construction."
+  },
+  {
+    "objectID": "publications.html#footnotes",
+    "href": "publications.html#footnotes",
+    "title": "Publications",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\n(P. M. Garrett, Z. Howard, J. W. Houpt, D. Landy, & A. Eidels, 2019)↩︎"
+  },
+  {
+    "objectID": "home.html",
+    "href": "home.html",
+    "title": "Welcome!",
+    "section": "",
+    "text": "Cognitive Scientist | PhD. Mathematical Psychology\n\n\nExploring the precision of human memory, attention, and decision‑making."
+  },
+  {
+    "objectID": "home.html#research-interests",
+    "href": "home.html#research-interests",
+    "title": "Welcome!",
+    "section": "🧠 Research Interests",
+    "text": "🧠 Research Interests\n\nVisual working memory and attentional limits\n\nBayesian models and signal detection\n\nCognitive workload assessment and applied performance"
+  },
+  {
+    "objectID": "home.html#interactive-demos",
+    "href": "home.html#interactive-demos",
+    "title": "Welcome!",
+    "section": "🧪 Interactive Demos",
+    "text": "🧪 Interactive Demos\nTry my Shiny-based tools to simulate memory precision and decision-making under load."
+  },
+  {
+    "objectID": "home.html#contact",
+    "href": "home.html#contact",
+    "title": "Welcome!",
+    "section": "📬 Contact",
+    "text": "📬 Contact\n\nEmail: paul.garrett@unimelb.edu.au\n\nGitHub: @PaulGarrettPhD"
+  },
+  {
+    "objectID": "apps.html",
+    "href": "apps.html",
+    "title": "Accumulator Model Simulators",
+    "section": "",
+    "text": "Open full screen"
+  },
+  {
+    "objectID": "licence.html",
+    "href": "licence.html",
+    "title": "Site Licenses",
+    "section": "",
+    "text": "Licensed under AGPL-3.0-or-later. See the LICENSE file in the repo."
+  },
+  {
+    "objectID": "licence.html#code",
+    "href": "licence.html#code",
+    "title": "Site Licenses",
+    "section": "",
+    "text": "Licensed under AGPL-3.0-or-later. See the LICENSE file in the repo."
+  },
+  {
+    "objectID": "licence.html#content",
+    "href": "licence.html#content",
+    "title": "Site Licenses",
+    "section": "Content",
+    "text": "Content\nText, figures, and pages are CC BY-SA 4.0 unless noted.\nLink: https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  {
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research",
+    "section": "",
+    "text": "My research…"
+  }
+]

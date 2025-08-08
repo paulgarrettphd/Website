@@ -1,0 +1,37 @@
+---
+title: "Accumulator Model Simulators"
+page-layout: full        # use the full width
+# optional: hide sidebar on this page
+# sidebar: false
+format:
+  html:
+    toc: false
+---
+
+<!-- Taller on desktop, still OK on mobile -->
+<style>
+.app-frame {
+  width: 100%;
+  height: min(90vh, 1000px); /* responsive-ish height */
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,.08);
+}
+.launch-row {
+  margin: 0.75rem 0 1.25rem 0;
+}
+</style>
+
+<div class="launch-row">
+  <a class="btn btn-primary" href="https://drpaulmgarrett.shinyapps.io/accumlatormodels/" target="_blank" rel="noopener">
+    Open full screen
+  </a>
+</div>
+
+<iframe
+  class="app-frame"
+  src="https://drpaulmgarrett.shinyapps.io/accumlatormodels/"
+  loading="lazy"
+  title="Accumulator Model Simulators"
+  allowfullscreen>
+</iframe>

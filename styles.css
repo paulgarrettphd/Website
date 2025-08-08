@@ -1,0 +1,65 @@
+/* Font and page styling */
+body {
+  font-family: 'Georgia', 'Cambria', serif;
+  background-color: #ffffff;
+  color: #212529;
+}
+
+/* Header & Nav styling */
+.navbar {
+  background-color: #002147 !important; /* Unimelb blue */
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+  color: #ffffff !important;
+  font-weight: 600;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #a6d5fa !important;
+}
+
+/* Links */
+a {
+  color: #0055a5;
+}
+a:hover {
+  color: #002147;
+  text-decoration: underline;
+}
+
+/* Headings */
+h1, h2, h3 {
+  color: #002147;
+  font-weight: 700;
+}
+
+/* Hero blocks */
+.hero,
+.hero * {
+  color: #fff !important;
+  
+}
+
+.hero-flex {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+
+section.footnotes,
+section.footnotes h2,
+section.footnotes .footnote-back {
+  display: none !important;
+}
+
+.headshot {
+  width: 170px;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0 0 8px rgba(0,0,0,.3);
+}

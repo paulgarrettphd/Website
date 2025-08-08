@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<style xmlns="http://purl.org/net/xbiblio/csl" version="1.0">
+  <info>
+    <title>American Psychological Association 7th edition (tweaked)</title>
+    <id>http://www.zotero.org/styles/apa</id>
+    <link href="http://www.zotero.org/styles/apa" rel="self"/>
+    <author>
+      <name>Zotero Team</name>
+    </author>
+    <category citation-format="author-date"/>
+    <category field="psychology"/>
+    <updated>2020-02-07T12:00:00+00:00</updated>
+    <summary>APA style as outlined in the 7th edition manual (2020). Tweaked for spacing.</summary>
+  </info>
+
+  <locale xml:lang="en">
+    <terms>
+      <term name="et-al">et al.</term>
+    </terms>
+  </locale>
+
+  <!-- AUTHOR MACRO -->
+  <macro name="author">
+    <names variable="author">
+      <name and="symbol" initialize-with=". " delimiter=", "/>
+      <label form="short" prefix=" (" suffix=")"/>
+      <et-al font-style="italic"/>
+    </names>
+  </macro>
+
+  <!-- YEAR MACRO -->
+  <macro name="issued">
+    <date variable="issued">
+      <date-part name="year"/>
+    </date>
+  </macro>
+
+  <!-- TITLE MACRO -->
+  <macro name="title">
+    <text variable="title" font-style="italic"/>
+  </macro>
+
+  <!-- JOURNAL MACRO -->
+  <macro name="container">
+    <group delimiter=", ">
+      <text variable="container-title" font-style="italic"/>
+      <group>
+        <text variable="volume" font-weight="bold"/>
+        <text variable="issue" prefix="(" suffix=")"/>
+      </group>
+      <text variable="page"/>
+    </group>
+  </macro>
+
+  <!-- CITATION STYLE (parenthetical) -->
+  <citation>
+    <layout prefix="(" suffix=")" delimiter="; ">
+      <text macro="author"/>
+      <text macro="issued" prefix=", "/>
+    </layout>
+  </citation>
+
+  <!-- BIBLIOGRAPHY STYLE -->
+  <bibliography>
+    <layout hanging-indent="true">
+      <group delimiter=". ">
+        <group>
+          <text macro="author"/>
+          <text macro="issued" prefix=" (" suffix=")."/>
+        </group>
+        <text macro="title"/>
+        <text macro="container" prefix=". "/>
+        <text variable="DOI" prefix=". https://doi.org/"/>
+      </group>
+    </layout>
+  </bibliography>
+</style>

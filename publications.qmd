@@ -1,0 +1,8 @@
+---
+title: "Publications"
+---
+
+
+Citation example my work on systems of estimation [@garrett2019comparative]. 
+
+This page is under construction.
