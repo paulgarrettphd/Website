@@ -4,15 +4,26 @@ format: html
 ---
 
 :::{.hero style="display:flex; align-items:center; gap:1rem; background-color:#002147; color:white; padding:1.5rem; border-radius:30px;"}
-![](paul.png){.headshot style="width:170px;height:170px;object-fit:cover;border-radius:50%;border:3px solid #fff;"}
+![](paul.png){.headshot style="width:190px;height:190px;object-fit:cover;border-radius:50%;border:3px solid #fff;"}
 <div>
   <h1>Dr Paul M. Garrett</h1>
   <p><strong>Cognitive Scientist | PhD. Mathematical Psychology</strong></p>
   <p>Exploring the precision of human memory, attention, and decision‑making.</p>
+  ```{r gs, echo=FALSE, results='asis', message=TRUE, warning=TRUE}
+library(jsonlite)
+m <- fromJSON("scripts/data/metrics.json", simplifyVector = TRUE)
+txt = cat(sprintf("H-index: %s · Citations: %s · i10-index: %s (GS: %s)",
+            m$h_index, format(m$citations, big.mark=","), m$i10_index,
+            m$updated_utc,1,10))
+
+```
 </div>
+
 :::
 
 <p> </p>
+
+
 
 ## 🧠 Research Interests
 
