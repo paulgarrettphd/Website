@@ -1,10 +1,10 @@
 name: accumlatormodels
-title:
+title: Accumulator Model Simulator
 username: drpaulmgarrett
 account: drpaulmgarrett
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 15176257
-bundleId: 10743332
+bundleId: 10774458
 url: https://drpaulmgarrett.shinyapps.io/accumlatormodels/
 version: 1
