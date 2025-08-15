@@ -10,13 +10,13 @@ format: html
   <p><strong>Cognitive Scientist | PhD. Mathematical Psychology</strong></p>
   <p>Exploring the precision of human memory, attention, and decision‑making.</p>
   ```{r gs, echo=FALSE, results='asis', message=TRUE, warning=TRUE}
-library(jsonlite)
-m <- fromJSON("scripts/data/metrics.json", simplifyVector = TRUE)
-txt = cat(sprintf("H-index: %s · Citations: %s · i10-index: %s (GS: %s)",
+  library(jsonlite)
+  m <- fromJSON("scripts/data/metrics.json", simplifyVector = TRUE)
+  txt = cat(sprintf("H-index: %s · Citations: %s · i10-index: %s (GS: %s)",
             m$h_index, format(m$citations, big.mark=","), m$i10_index,
             m$updated_utc,1,10))
 
-```
+  ```
 </div>
 
 :::
