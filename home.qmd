@@ -27,13 +27,18 @@ format: html
 
 ## 🧠 Research Interests
 
-- Visual working memory and attentional limits  
-- Bayesian models and signal detection  
-- Cognitive workload assessment and applied performance
+- Visual working memory and attentional limits in continous outcome tasks
+- Response time and accuracy models of decision making
+- Cognitive workload assessments and applied performance
+- Systems Factorial Technology: Applications and Development
+- Ecological Momentary Assessements of emotions and memory
+- Cross-Cultural Numerical Cognition
+
 
 ## 🧪 Interactive Demos
 
-Try my [Shiny-based tools](https://your-shiny-app.shinyapps.io/) to simulate memory precision and decision-making under load.
+Simulate response-time and accuracy outcomes using a host of interactive RT models [Shiny-based tools](https://paulgarrettphd.github.io/Website/accumulatorsimulator.html).
+
 
 ## 📬 Contact
 

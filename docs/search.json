@@ -25,14 +25,14 @@
     "href": "home.html#research-interests",
     "title": "Welcome!",
     "section": "🧠 Research Interests",
-    "text": "🧠 Research Interests\n\nVisual working memory and attentional limits\n\nBayesian models and signal detection\n\nCognitive workload assessment and applied performance"
+    "text": "🧠 Research Interests\n\nVisual working memory and attentional limits in continous outcome tasks\nResponse time and accuracy models of decision making\nCognitive workload assessments and applied performance\nSystems Factorial Technology: Applications and Development\nEcological Momentary Assessements of emotions and memory\nCross-Cultural Numerical Cognition"
   },
   {
     "objectID": "home.html#interactive-demos",
     "href": "home.html#interactive-demos",
     "title": "Welcome!",
     "section": "🧪 Interactive Demos",
-    "text": "🧪 Interactive Demos\nTry my Shiny-based tools to simulate memory precision and decision-making under load."
+    "text": "🧪 Interactive Demos\nSimulate response-time and accuracy outcomes using a host of interactive RT models Shiny-based tools."
   },
   {
     "objectID": "home.html#contact",
