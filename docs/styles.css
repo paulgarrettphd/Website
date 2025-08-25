@@ -63,3 +63,41 @@ section.footnotes .footnote-back {
   border: 3px solid #fff;
   box-shadow: 0 0 8px rgba(0,0,0,.3);
 }
+
+.project-card {
+  border: 1px solid #e6e6e6;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,.06);
+  transition: transform .15s ease, box-shadow .15s ease;
+  margin-bottom: 1.25rem;
+}
+.project-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0,0,0,.10);
+}
+/* replace your .project-img block with this */
+.project-card .project-img {
+  width: 100%;
+  height: auto;       /* don't use 100% here */
+  display: block;     /* avoids inline-gap issues */
+}
+
+@media (min-width: 768px) {
+  .project-card .project-img {
+    height: 260px;    /* consistent card height on desktop */
+    object-fit: cover;
+  }
+}
+
+.project-card .project-body { padding: 1rem 1.25rem; }
+.project-meta { font-size: .9rem; opacity: .75; }
+
+/* Alternate image/text automatically for even cards on ≥ md screens */
+@media (min-width: 768px) {
+  .project-list .project-card:nth-child(even) .row {
+    flex-direction: row-reverse;
+  }
+}
+
+

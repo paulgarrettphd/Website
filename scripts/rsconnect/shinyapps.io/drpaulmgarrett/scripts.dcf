@@ -1,0 +1,10 @@
+name: scripts
+title:
+username: drpaulmgarrett
+account: drpaulmgarrett
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 15218687
+bundleId:
+url: https://drpaulmgarrett.shinyapps.io/scripts/
+version: 1

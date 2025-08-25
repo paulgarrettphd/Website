@@ -35,3 +35,263 @@ format:
   title="Accumulator Model Simulators"
   allowfullscreen>
 </iframe>
+
+
+
+> This page summarises the descriptive and accumulator models implemented in the simulator, why you might use each one, and how the parameters map to psychological meaning and the app’s sliders. Citations refer to canonical sources; see the bibliography at the end.
+
+# Descriptive RT/Accuracy Models
+
+## Bernoulli–Weibull (shifted Weibull RT + Bernoulli accuracy)
+
+**Why/when to use.**  
+A simple, distribution-first description of RT with a flexible hazard (Weibull) and independent accuracy. Useful for baseline fits, pedagogy, and when you want a clean RT shape without commitment to a decision process.
+
+**What’s unique/useful.**  
+Separable RT shape and accuracy; the Weibull can emulate increasing/decreasing hazard functions.
+
+**Parameters (app).**
+- `k` *(Weibull shape)* — Controls hazard: \(k<1\) decreasing, \(k=1\) exponential, \(k>1\) increasing.
+- `λ` *(Weibull scale)* — Stretches RTs.
+- `t0` *(non-decision)* — Pure shift (encoding/motor).
+- `p` *(accuracy)* — Bernoulli success probability.
+
+**Canonical refs.** @Weibull1951; distributional RT pedagogy @Luce1986.
+
+---
+
+## Poisson Counter (Gamma race)
+
+**Why/when to use.**  
+A discrete-event race: each response channel waits for \(N\) countable events at rate \(λ\). Good for illustrating race logic and how rate vs threshold shape RT/accuracy.
+
+**What’s unique/useful.**  
+Closed-form Gamma finishing times; easy intuition: faster rate or lower \(N\) → faster responses.
+
+**Parameters (app).**
+- `N` *(threshold counts)* — Events required to finish (shape).
+- `λ_c`, `λ_e` *(rates)* — Correct vs error channel event rates.
+- `t0` *(non-decision)* — Additive shift.
+
+**Canonical refs.** Race/counter models in @Luce1986; gamma-race for choice RT @Schwarz2001.
+
+# Classic Sequential-Sampling Models
+
+## Random Walk (discrete drift to fixed bounds)
+
+**Why/when to use.**  
+The pedagogical ancestor of diffusion models; shows stepwise accumulation to upper/lower bounds.
+
+**What’s unique/useful.**  
+Transparent link between step bias/size and speed–accuracy trade-off.
+
+**Parameters (app).**
+- `p` *(step-up probability)* — Bias toward the upper bound.
+- `h` *(step size)* — Evidence quantum per step.
+- `a` *(bound)* — Decision threshold (0..a).
+- `z/a` *(start proportion)* — Starting bias.
+- `dt` *(step time)* — Temporal grain.
+
+**Canonical refs.** @Stone1960; @Laming1968.
+
+---
+
+## Diffusion Decision Model (DDM; fixed bounds)
+
+**Why/when to use.**  
+The workhorse for 2AFC RT/accuracy; explains full distributions, accuracy, and their coupling.
+
+**What’s unique/useful.**  
+Single-dimension continuous diffusion; clean parameter interpretability (drift = evidence quality, bound = caution).
+
+**Parameters (app).**
+- `v` *(drift)* — Mean evidence rate (quality/bias).
+- `s` *(diffusion SD)* — Within-trial noise scale.
+- `a` *(bound)* — Caution/threshold.
+- `z/a` *(start bias)* — Starting point as fraction of `a`.
+
+**Canonical refs.** @Ratcliff1978; tutorial review @RatcliffMcKoon2008.
+
+---
+
+## Wiener DDM with across-trial variability
+
+**Why/when to use.**  
+Realistic fits to skew/heavy-tail RTs by allowing trial-to-trial variation in start, drift, and non-decision.
+
+**What’s unique/useful.**  
+Adds `sz`, `sv`, `st0` to capture over-dispersion without changing the within-trial process.
+
+**Parameters (app).**
+- `a, v, s, z/a, t0` — As above.
+- `sz` *(start range)* — Uniform variability in `z`.
+- `sv` *(drift SD)* — Gaussian variability in `v`.
+- `st0` *(non-decision range)* — Uniform variability in `t0`.
+
+**Canonical refs.** @RatcliffTuerlinckx2002.
+
+---
+
+## DDM with Hyperbolically Collapsing Bound(s)
+
+**Why/when to use.**  
+Time pressure/urgency: bounds that shrink over time allow “impatient” decisions with speedups at longer times.
+
+**What’s unique/useful.**  
+Hyperbolic collapse \(a(t)=\max(a_{\min},a_0/(1+kt))\) approximates optimal policies under deadlines.
+
+**Parameters (app).**
+- `v, s` — As DDM.
+- `a0` *(initial bound)* and `a_min` *(floor)*.
+- `k` *(collapse rate)* — Urgency growth.
+- `z/a0` *(start bias)* — Relative to `a0`.
+- `dt` *(integration step)*.
+- `±a(t)` *(checkbox)* — Symmetric vs upper-only collapse.
+
+**Canonical refs.** Collapsing bounds @DiederichBusemeyer2003; hyperbolic/urgency accounts @Hawkins2015; normative urgency @Drugowitsch2012.
+
+# Leaky/Competing & Mean-Reverting Models
+
+## Leaky Competing Accumulator (LCA; 2 accumulators)
+
+**Why/when to use.**  
+When mutual inhibition and leakage matter (e.g., distractor suppression, competition).
+
+**What’s unique/useful.**  
+Two coupled SDEs with leak \(κ\) and lateral inhibition \(β\); rectification at 0 prevents negative activation.
+
+**Parameters (app).**
+- `v` *(target input)* and `(1−v)` *(competitor input)*.
+- `s` *(noise SD)* — Within-trial noise.
+- `b` *(bound)*, `a` *(max start)*.
+- `kappa` *(leak κ)* — Pulls state toward 0.
+- `beta` *(inhibition β)* — Cross-inhibition strength.
+- `dt` *(step)*; `Max time` *(stop rule for plotting)*.
+
+**Canonical refs.** @UsherMcClelland2001.
+
+---
+
+## Ornstein–Uhlenbeck (OU) with fixed 0..a bounds
+
+**Why/when to use.**  
+Mean-reverting accumulation toward a set-point (\(μ\)). Useful for teaching mean reversion vs constant-drift diffusion.
+
+**What’s unique/useful.**  
+Linear pull back to \(μ\); becomes DDM as \(θ\to0\).
+
+**Parameters (app).**
+- `θ` *(mean reversion rate)* — Strength of pull toward `μ`.
+- `μ/a` *(set-point as proportion of a)*.
+- `s` *(noise SD)*.
+- `a`, `z/a`, `t0`, `dt` — As above.
+
+**Canonical refs.** OU process @UhlenbeckOrnstein1930; decision applications @BusemeyerTownsend1993.
+
+---
+
+## LDLIV Dual-Race (state-dependent noise)
+
+**Why/when to use.**  
+A square-root diffusion (CIR type) where noise grows with the state, keeping \(X\ge 0\). Useful to illustrate multiplicative noise and positivity.
+
+**What’s unique/useful.**  
+Each channel follows \(dX=(q-kX)\,dt+\sqrt{2\sigma X}\,dW\) and races to `b`.
+
+**Parameters (app).**
+- `b` *(bound)*.
+- `q_c`, `q_e` *(inputs)* — Drive for each channel.
+- `k` *(leak)* — Pull toward baseline.
+- `σ` *(noise scale)* — Multiplies \(\sqrt{X}\).
+- `z/b` *(start proportion)*, `t0`, `dt`.
+
+**Canonical refs.** CIR process @Cox1985; multiplicative-noise decision variants reviewed in @Bogacz2006.
+
+# Circular/Angular Models
+
+## Circular Diffusion Model (vector 2D diffusion to a circle)
+
+**Why/when to use.**  
+Continuous-report/angle tasks: evidence drifts in 2D toward a direction and stops at a radius (choice angle = hit angle).
+
+**What’s unique/useful.**  
+Directly produces a response **angle** and RT jointly from a 2D diffusion with drift vector.
+
+**Parameters (app).**
+- `v` *(drift speed)* — Toward `θ`.
+- `s` *(noise SD)* — Isotropic planar noise.
+- `R` *(radius)* — Absorbing circle (decision bound).
+- `θ (deg)` *(target angle)* — Direction of drift.
+
+**Canonical refs.** Circular/planar diffusion for angle decisions: see @Smith2016; continuous-report links in @Ratcliff2018.
+
+---
+
+## SCDM: Sinusoidal Field to Bound (didactic variant)
+
+**Why/when to use.**  
+Pedagogical “population-tuning” view: a sinusoidal/von-Mises template over angle receives drift + noise; decision when the crest hits `b`.
+
+**What’s unique/useful.**  
+Shows how **tuning sharpness** (κ) and **noise** shape the growth of a directional wave toward threshold.
+
+**Parameters (app).**
+- `v` *(drift amplitude)* — Scales the template drive.
+- `s` *(noise SD)* — Additive field noise.
+- `b` *(threshold)* — Circular bound in “activation space”.
+- `κ` *(tuning)* — κ=0 → cosine; larger κ → sharper template.
+- `M` *(angular bins)* — Discretisation of 0..2π.
+- `θ (deg)` *(target angle)* — Template centre.
+- `dt` *(integration step)*.
+
+**Canonical refs.** Didactic; relates to population-tuning decision fields (see @Beck2008; orientation-tuned diffusion @Eckstein2011).
+
+# Linear Ballistic Accumulator (LBA) Family
+
+## LBA (fixed bound)
+
+**Why/when to use.**  
+A deterministic-within-trial race model with across-trial variability only—fast, closed-form, transparent fits.
+
+**What’s unique/useful.**  
+Ballistic linear growth from random starts and random drifts; no within-trial noise.
+
+**Parameters (app).**
+- `v` *(mean drift of correct channel)* — Evidence strength; error channel uses `1 − v` here (pedagogical 2-accumulator setup).
+- `s` *(drift SD)* — Across-trial variability (truncated normal).
+- `b` *(threshold)* — Common bound.
+- `a` *(start max)* — Uniform start in \([0,a]\).
+
+**Canonical refs.** @BrownHeathcote2008.
+
+---
+
+## LBA with Collapsing Bound
+
+**Why/when to use.**  
+Adds urgency to LBA via a linearly collapsing bound.
+
+**What’s unique/useful.**  
+Simple urgency mechanism with clear geometry: \(b(t)=\max(b_{\min}, b_0-kt)\).
+
+**Parameters (app).**
+- `v, s` — As LBA.
+- `b0` *(initial bound)*, `b_min` *(floor)*.
+- `k` *(collapse rate)*.
+- `a` *(start max)*.
+
+**Canonical refs.** Collapsing-bound LBA variants in @Hawkins2015; urgency modelling reviews in @Trueblood2014.
+
+# Notes on Shared Concepts
+
+- **Drift \(v\)**: mean evidence rate; ↑\(v\) → faster & more accurate (when sign aligned with “correct”).  
+- **Bound \(a, b\)**: response caution; ↑bound → slower, more accurate.  
+- **Start \(z\) or \(a\)-relative \(z/a\)**: a priori bias; nearer upper bound favours “correct” (in app’s mapping).  
+- **Noise \(s\)**: within-trial variability (diffusion S.D.); across-trial variability handled by `sv, sz, st0` where applicable.  
+- **Non-decision \(t_0\)**: encoding/motor time; shifts RT without changing accuracy.
+
+# Bibliography
+
+::: {#refs}
+:::
+

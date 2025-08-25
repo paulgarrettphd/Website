@@ -2,4 +2,30 @@
 title: "Research"
 ---
 
-My research...
+
+
+<div class="project-list">
+
+    <!-- Card 1 -->
+    <div class="project-card">
+
+        <div class="row g-0 align-items-stretch">
+            ![Lua test](Lua2025.png)
+        </div>
+    </div>
+</div>
+
+
+<div class="project-list">
+
+  <!-- Card 1 -->
+  <div class="project-card">
+    <div class="row g-0 align-items-stretch">
+      <div class="col-md-5">
+        <img alt="Project image: Double Decision VWM" src="Lua2025.png" class="project-img">
+      </div>
+    </div>
+  </div>
+
+</div>
+

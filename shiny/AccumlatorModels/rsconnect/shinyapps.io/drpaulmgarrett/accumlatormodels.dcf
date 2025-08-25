@@ -5,6 +5,6 @@ account: drpaulmgarrett
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 15176257
-bundleId: 10774458
+bundleId: 10804798
 url: https://drpaulmgarrett.shinyapps.io/accumlatormodels/
 version: 1

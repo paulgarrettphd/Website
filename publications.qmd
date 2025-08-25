@@ -1,8 +1,88 @@
 ---
 title: "Publications"
 ---
+**References**
 
+Little, D. R., Eidels, A., Houpt, J. W., **Garrett**, P. M., & Griffiths, D. W. (2019). Systems factorial technology analysis of mixtures of processing architectures. *Journal of Mathematical Psychology, 92,* 102229. https://doi.org/10.1016/j.jmp.2019.102229
 
-Citation example my work on systems of estimation [@garrett2019comparative]. 
+Dennis, S., **Garrett**, P., Yim, H., Hamm, J., Osth, A. F., Sreekumar, V., & Stone, B. (2019). Privacy versus open science. *Behavior Research Methods, 51*(4), 1839–1848. https://doi.org/10.3758/s13428-019-01254-4
 
-This page is under construction.
+Dennis, S., Yim, H., **Garrett**, P., Sreekumar, V., & Stone, B. (2019). A system for collecting and analyzing experience-sampling data. *Behavior Research Methods, 51*(4), 1824–1838. https://doi.org/10.3758/s13428-019-01216-w
+
+Dennis, S., Yim, H., Sreekumar, V., Evans, N., **Garrett**, P., & Sederberg, P. (2017). A hierarchical Bayesian model of “memory for when” based on experience sampling data. In *Proceedings of the Annual Meeting of the Cognitive Science Society* (Vol. 39).
+
+**Garrett**, P. M., Howard, Z., Houpt, J. W., Landy, D., & Eidels, A. (2019). Comparative estimation systems perform under severely limited workload capacity. *Journal of Mathematical Psychology, 92,* 102255. https://doi.org/10.1016/j.jmp.2019.102255
+
+Yim, H., **Garrett**, P. M., Baker, M., & Dennis, S. J. (2018). Examining the independence of scales in episodic memory using experience sampling data. In *Proceedings of the Annual Meeting of the Cognitive Science Society* (Vol. 40).
+
+Cooper, P. S., **Garrett**, P. M., Rennie, J. L., & Karayanidis, F. (2015). Task uncertainty can account for mixing and switch costs in task-switching. *PLoS ONE, 10*(6), e0131556. https://doi.org/10.1371/journal.pone.0131556
+
+Tillman, G., Howard, Z., Garret, P., & Eidels, A. (2017). The Stroop effect from a mixture of reading processes: A fixed-point analysis. In *Proceedings of the Annual Meeting of the Cognitive Science Society* (Vol. 39).
+
+Howard, Z. L., **Garrett**, P., Little, D. R., Townsend, J. T., & Eidels, A. (2021). A show about nothing: No-signal processes in systems factorial technology. *Psychological Review, 128*(1), 187–204. https://doi.org/10.1037/rev0000259
+
+Lewandowsky, S., Dennis, S., Perfors, A., Kashima, Y., White, J. P., **Garrett**, P., Little, D. R., & Yesilada, M. (2021). Public acceptance of privacy-encroaching policies to address the COVID-19 pandemic in the United Kingdom. *PLoS ONE, 16*(1), e0245740. https://doi.org/10.1371/journal.pone.0245740
+
+**Garrett**, P. M. (2020). *Understanding the cognitive mechanisms behind numerical cognition* (Doctoral dissertation). The University of Newcastle, Australia.
+
+Vromen, A., Andrejevic, M., Biddle, N., Dennis, S., **Garrett**, P., Goggin, G., Hannah, K., Hjorth, L., Jetten, J., Lupton, D., & others. (2020). Changes in public sentiment in relation to data privacy during COVID-19. *Australian Academy of Science.*
+
+**Garrett**, P. M., White, J. P., Lewandowsky, S., Kashima, Y., Perfors, A., Little, D. R., Geard, N., Mitchell, L., Tomko, M., & Dennis, S. (2021). The acceptability and uptake of smartphone tracking for COVID-19 in Australia. *PLoS ONE, 16*(1), e0244827. https://doi.org/10.1371/journal.pone.0244827
+
+**Garrett**, P. M., Wang, Y., White, J. P., Hsieh, S., Strong, C., Lee, Y.-C., Lewandowsky, S., Dennis, S., & Yang, C.-T. (2021). Young adults view smartphone tracking technologies for COVID-19 as acceptable: The case of Taiwan. *International Journal of Environmental Research and Public Health, 18*(3), 1332. https://doi.org/10.3390/ijerph18031332
+
+Dennis, S. J., Perfors, A., Little, D. R., White, J., Mitchell, L., Geard, N., **Garrett**, P. M., & Lewandowsky, S. (2020). 70% of people surveyed said they’d download a coronavirus app: Only 44% did. Why the gap? 
+
+Kozyreva, A., Lorenz-Spreen, P., Lewandowsky, S., **Garrett**, P. M., Herzog, S. M., Pachur, T., & Hertwig, R. (2021). Psychological factors shaping public responses to COVID-19 digital contact tracing technologies in Germany. *Scientific Reports, 11,* 18716. https://doi.org/10.1038/s41598-021-97965-4
+
+**Garrett**, P. M., Bennett, M., Hsieh, Y.-T., Howard, Z. L., Yang, C.-T., Little, D. R., & Eidels, A. (2022). Wheel of fortune: A cross-cultural examination of how expertise shapes the mental representations of familiar and unfamiliar numerals. *Computational Brain & Behavior.* Advance online publication. https://doi.org/10.1007/s42113-022-00183-4
+
+**Garrett**, P. M., Wang, Y., White, J. P., Kashima, Y., Dennis, S., & Yang, C.-T. (2022). High acceptance of COVID-19 tracing technologies in Taiwan: A nationally representative survey analysis. *International Journal of Environmental Research and Public Health, 19*(6), 3323. https://doi.org/10.3390/ijerph19063323
+
+**Garrett**, P. M., White, J., Little, D., Perfors, A., Kashima, Y., Lewandowsky, S., & Dennis, S. (2020). A representative sample of Australian participants’ attitudes towards the COVIDSafe App. *[Data set].* Retrieved from https://paulgarrettphd.github.io/Site/Wave3PrelimAnalysis.html
+
+**Garrett**, P. M., & Dennis, S. J. (2021). Australia has all but abandoned the COVIDSafe app in favour of QR codes (so make sure you check in). *The Conversation.* https://theconversation.com/australia-has-all-but-abandoned-the-covidsafe-app-in-favour-of-qr-codes-so-make-sure-you-check-in-157834
+
+Dennis, S., Lewandowsky, S., Lorenz-Spreen, P., Oberauer, K., Okan, Y., Goldstone, R., Yang, C.-T., Kashima, Y., Perfors, A., White, J., & others. (2020). Social licensing of privacy-encroaching policies to address the COVID-19 pandemic. *[Web resource].* Retrieved from https://stephanlewandowsky.github.io/UKsocialLicence/index.html
+
+Gomez, L. V. S., Defina, R., Garret, P., Zacks, J. M., & Dennis, S. (2022). How long are real-life events? *[Manuscript].*
+
+**Garrett**, P. M., White, J. P., Dennis, S., Lewandowsky, S., Yang, C.-T., Okan, Y., Perfors, A., Little, D. R., Kozyreva, A., Lorenz-Spreen, P., & others. (2022). Papers please: Predictive factors of national and international attitudes toward immunity and vaccination passports. *JMIR Public Health and Surveillance, 8*(7), e32969. https://doi.org/10.2196/32969
+
+O’Donnell, S., Fonti, I., **Garrett**, P., Gomez, L. V. S., Stone, B., & Dennis, S. (2022). When did I post that? How do we access memory-for-when on social media? *[Preprint].* OSF.
+
+**Garrett**, P. M., White, J. P., Luo, Y., Dennis, S., Geard, N., Little, D. R., Mitchell, L., Perfors, A., Tomko, M., Andrighetto, G., & others. (2022). COVID-19, national culture, and privacy calculus: Factors predicting the cross-cultural acceptance and uptake of contact-tracing technologies. *[Manuscript].*
+
+Smith, P. L., **Garrett**, P. M., & Zhou, J. (2023). Obtaining stable predicted distributions of response times and decision outcomes for the circular diffusion model. *Computational Brain & Behavior, 6*(4), 543–555. https://doi.org/10.1007/s42113-023-00183-1
+
+Sastre Gomez, V., Defina, R., **Garrett**, P. M., Zacks, J. M., & Dennis, S. (2023). The prevalence of multitasking presents challenges for theories of event segmentation. In *Proceedings of the Annual Meeting of the Cognitive Science Society* (Vol. 45).
+
+Zhang, H., **Garrett**, P. M., Lin, P.-Y., Houpt, J. W., & Yang, C.-T. (2023). Visual word processing efficiency for Chinese characters and English words. *Acta Psychologica, 238,* 103986. https://doi.org/10.1016/j.actpsy.2023.103986
+
+Zhang, H., **Garrett**, P. M., Houpt, J. W., Lin, P.-Y., & Yang, C.-T. (2023). Chinese holistic processing: Evidence from cognitive mental architecture using Systems Factorial Technology. *Heliyon, 9*(9), e2023. https://doi.org/10.1016/j.heliyon.2023.e2023
+
+Yim, H., **Garrett**, P. M., Baker, M., Cha, J., Sreekumar, V., & Dennis, S. J. (2024). Examining dependencies among different time scales in episodic memory: An experience sampling study. *Frontiers in Psychology, 14,* 1277741. https://doi.org/10.3389/fpsyg.2023.1277741
+
+Sastre Gomez, V., Defina, R., **Garrett**, P. M., Zacks, J. M., & Dennis, S. (2024). What binds non-contiguous events together? In *Proceedings of the Annual Meeting of the Cognitive Science Society* (Vol. 46).
+
+Sastre Gomez, V., Defina, R., **Garrett**, P. M., Zacks, J. M., & Dennis, S. (2024). Event distribution in daily life: A replication study. In *Proceedings of the Annual Meeting of the Cognitive Science Society* (Vol. 46).
+
+Fong, L. C., Blunden, A. G., **Garrett**, P. M., Smith, P. L., & Little, D. R. (2024). Unifying approaches to understanding capacity in change detection. *Psychological Review.* Advance online publication. https://doi.org/10.1037/rev0000390
+
+**Garrett**, P., Dennis, S., White, J. P., Kashima, Y., Perfors, A., Little, D. R., Lewandowsky, S., Geard, N., Mitchell, L., Tomko, M., & others. (2020). Establishing the social licence to introduce tracking technologies to address COVID-19. *[Preprint].* OSF.
+
+Gutentag, T., Kalokerinos, E. K., Millgram, Y., **Garrett**, P. M., Sobel, R., & Tamir, M. (2024). Motivational intensity in emotion regulation. *Personality and Social Psychology Bulletin.* Advance online publication. https://doi.org/10.1177/01461672241273273
+
+Kalokerinos, E. K., Russo-Batterham, D., Koval, P., Moeck, E. K., Grewal, K. K., Greenaway, K. H., Shrestha, K. M., **Garrett**, P., Michalewicz, A., Garber, J., & others. (2023). The EMOTE database: An open, searchable database of experience sampling data mapping everyday life. *Manuscript in preparation.*
+
+Smith, P., **Garrett**, P., Saber, S., Qian, H., & Surette-Ferguson, E. (2025). Decision processes in continuous-outcome retrieval from visual working memory. *[Preprint].* OSF.
+
+**Garrett**, P., Lua, A., Feuerriegel, D., Little, D., & Smith, P. (2025). Double-decision response time models of recall and recognition support resource accounts of visual working memory. *[Preprint].* OSF.
+
+Sastre Gomez, V., Defina, R., **Garrett**, P., Zacks, J. M., & Dennis, S. (2025). Duration is not a reliable indicator for anticipating event boundaries. *Computational Brain & Behavior.* Advance online publication. https://doi.org/10.1007/s42113-025-00239-x
+
+Qian, H., **Garrett**, P., Surette-Ferguson, E., Salim, A., & Smith, P. (2025). More than just measurement models? Processing insights from population coding models of visual working memory retrieval. *[Preprint].* OSF.
+
+Greenaway, K. H., Lin, S. C., O’Brien, S. T., **Garrett**, P., Marris, J., & Kalokerinos, E. K. (2025). Do expressive suppression and cognitive reappraisal affect memory? *Emotion.* Advance online publication. https://doi.org/10.1037/emo0001379
+
+Smith, P., **Garrett**, P., Feuerriegel, D., Yook, J., & Lilburn, S. (n.d.). A comparison of single and multiple diffusion process models of continuous-outcome decision making. *[Preprint].* OSF.

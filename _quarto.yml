@@ -9,16 +9,12 @@ website:
     left:
       - text: "Home"
         file: home.qmd
-      - text: "Research"
-        file: research.qmd
       - text: "Publications"
         file: publications.qmd
       - text: "Resources"
         menu:
-          - text: "Description"
-            file: resources.qmd
-          - text: "Accumulator Simulators"
-            file: apps.qmd
+          - text: "Accumulator Model Simulator"
+            file: accumulatorsimulator.qmd
           - text: "Licences"
             file: licence.qmd
     right:
